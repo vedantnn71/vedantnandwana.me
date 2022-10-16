@@ -5,4 +5,5 @@ export * from "./icons";
 export * from "./hero";
 export * from "./emoji";
 export * from "./about";
+export * from "./projects";
 
