@@ -4,4 +4,5 @@ export * from "./layout";
 export * from "./icons";
 export * from "./hero";
 export * from "./emoji";
+export * from "./about";
 

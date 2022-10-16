@@ -7,16 +7,29 @@
   color-scheme: dark;
 }
 
+::selection {
+  @apply bg-neutral-700 text-neutral-100;
+}
+
 body {
   @apply bg-neutral-900 bg-repeat text-neutral-100;
 
-  background-image: url('/noise.png');
+  background-image: url("/noise.png");
 }
 
 .background-grid {
   @apply h-screen w-screen fixed top-0 left-0;
   @apply pointer-events-none z-[-1];
 
-  background: url('/grid.png');
+  background: url("/grid.png");
+}
+
+.stretch {
+  display: inline-flex;
+}
+
+.stretch:hover {
+  transform: scale(1.125, 1);
+  @apply mx-4 transition-all duration-300;
 }
 
