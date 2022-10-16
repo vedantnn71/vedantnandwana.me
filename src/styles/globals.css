@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-neutral-900 bg-repeat text-neutral-100;
+
+  background-image: url('/noise.png');
+}
+
+.background-grid {
+  @apply h-screen w-screen absolute top-0 left-0 pointer-events-none;
+
+  background: url('/grid.png');
+}
+
