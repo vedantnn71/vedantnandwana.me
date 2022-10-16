@@ -2,16 +2,20 @@ import { Emoji } from "@/components";
 import { ReactNode } from "react";
 
 export const About = () => (
-  <div className="flex flex-col w-full h-full text-neutral-400 font-semibold text-3xl gap-6">
-    <h1 className="text-2xl">about me</h1>
+  <div className="flex flex-col w-full h-full text-neutral-400 font-semibold text-xl md:text-3xl gap-6">
+    <h1 className="text-lg md:text-2xl">about me</h1>
     <p className="">
       heyy <Emoji name="wave" size={24} /> I’m <Highlight>vedant</Highlight>. A
       young dev who <Highlight>loveeeees</Highlight> tinkering and playing with
-      pixels.
+      software.
     </p>
     <p>
       I’m passionate about <Highlight>building sh#t</Highlight> that makes our
-      lives easier with a <span className="stretch underline-offset-8 hover:underline decoration-wavy ease-out">buttery smoooth</span> user experience.
+      lives easier with a{" "}
+      <span className="stretch underline-offset-8 hover:underline decoration-wavy ease-out">
+        buttery smoooth
+      </span>{" "}
+      user experience.
     </p>
     <p>
       {" "}
