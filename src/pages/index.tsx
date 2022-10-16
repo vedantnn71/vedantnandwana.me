@@ -1,6 +1,6 @@
 import { Layout, Hero } from "@/components";
 
-export default function() {
+export default function Index() {
   return (
     <Layout>
       <Hero />
