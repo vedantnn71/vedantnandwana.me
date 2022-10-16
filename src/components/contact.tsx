@@ -25,7 +25,7 @@ const Social = ({ name, link, iconId: id }: SocialProps) => (
 export const Contact = () => (
   <div
     className="flex flex-col w-full h-full text-neutral-300 font-semibold text-xl md:text-3xl gap-6 mt-10"
-    id="projects"
+    id="contact"
   >
     <h1 className="text-lg md:text-2xl">get in touch</h1>
 
