@@ -17,7 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
         </Container>
       </div>
 
-      <div className="background-grid z-[0]"></div>
+      <div className="background-grid z-[0] pointer-events-none"></div>
     </>
   )
 }

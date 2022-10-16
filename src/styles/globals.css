@@ -13,7 +13,7 @@ body {
 }
 
 .background-grid {
-  @apply h-screen w-screen absolute top-0 left-0 pointer-events-none;
+  @apply h-screen w-screen absolute top-0 left-0;
 
   background: url('/grid.png');
 }
