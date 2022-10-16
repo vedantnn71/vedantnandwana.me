@@ -1,0 +1,23 @@
+.button {
+  @apply flex items-center justify-center gap-2 outline-none;
+  @apply px-4 py-2 rounded-md active:scale-95 transition-all duration-300;
+  @apply font-medium;
+}
+
+.button-primary {
+  @apply border-2 border-neutral-600 rounded-full;
+  @apply bg-neutral-900 bg-opacity-50 backdrop-blur-sm;
+}
+
+.button-lg {
+  @apply text-xl px-8 py-4;
+}
+
+.button-md {
+  @apply text-lg px-6 py-3;
+}
+
+.button-sm {
+  @apply text-base px-4 py-2;
+}
+
