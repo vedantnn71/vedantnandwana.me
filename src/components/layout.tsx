@@ -9,7 +9,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <div 
-        className="w-screen h-screen bg-center bg-no-repeat bg-cover z-50 overflow-x-hidden"
+        className="w-screen h-screen bg-center bg-no-repeat bg-cover z-[1] overflow-x-hidden"
       >
         <Container>
           <Nav />
@@ -17,7 +17,7 @@ export const Layout = ({ children }: LayoutProps) => {
         </Container>
       </div>
 
-      <div className="background-grid z-[0] pointer-events-none"></div>
+      <div className="background-grid"></div>
     </>
   )
 }

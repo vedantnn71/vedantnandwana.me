@@ -14,7 +14,8 @@ body {
 }
 
 .background-grid {
-  @apply h-screen w-screen absolute top-0 left-0;
+  @apply h-screen w-screen fixed top-0 left-0;
+  @apply pointer-events-none z-[-1];
 
   background: url('/grid.png');
 }
