@@ -1,23 +1,22 @@
 .button {
   @apply flex items-center justify-center gap-2 outline-none;
-  @apply px-4 py-2 rounded-md active:scale-95 transition-all duration-300;
+  @apply rounded-md px-4 py-2 transition-all duration-300 active:scale-95;
   @apply font-medium;
 }
 
 .button-primary {
-  @apply border-2 border-neutral-600 rounded-full;
+  @apply rounded-full border-2 border-neutral-600;
   @apply bg-neutral-900 bg-opacity-50 backdrop-blur-sm;
 }
 
 .button-lg {
-  @apply text-xl px-8 py-4;
+  @apply px-8 py-4 text-xl;
 }
 
 .button-md {
-  @apply text-lg px-6 py-3;
+  @apply px-6 py-3 text-lg;
 }
 
 .button-sm {
-  @apply text-base px-4 py-2;
+  @apply px-4 py-2 text-base;
 }
-

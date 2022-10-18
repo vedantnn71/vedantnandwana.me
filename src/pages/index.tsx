@@ -8,6 +8,5 @@ export default function Index() {
       <Projects />
       <Contact />
     </Layout>
-  )
+  );
 }
-

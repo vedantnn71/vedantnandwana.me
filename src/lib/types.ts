@@ -1,4 +1,4 @@
-import { MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 export type Post = {
   _id: string;
@@ -20,4 +20,3 @@ export type NowPlayingSong = {
   songUrl: string;
   title: string;
 };
-

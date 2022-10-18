@@ -1,11 +1,11 @@
-import { PropsWithChildren, Suspense } from 'react';
-import { BlogContainer } from '@/components';
-import { Post, urlForImage } from '@/lib';
-import { parseISO, format } from 'date-fns';
+import { PropsWithChildren, Suspense } from "react";
+import { BlogContainer } from "@/components";
+import { Post, urlForImage } from "@/lib";
+import { parseISO, format } from "date-fns";
 
 export const BlogLayout = ({
   children,
-  post
+  post,
 }: PropsWithChildren<{ post: Post }>) => {
   return (
     <BlogContainer
@@ -15,19 +15,19 @@ export const BlogLayout = ({
       date={new Date(post.date).toISOString()}
       type="article"
     >
-      <article className="flex flex-col items-start w-full mb-16">
+      <article className="mb-16 flex w-full flex-col items-start">
         <h1 className="mb-2 text-3xl font-bold tracking-tight md:text-2xl">
           {post.title}
         </h1>
-        <div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center">
+        <div className="flex w-full flex-col items-start justify-between md:flex-row md:items-center">
           <div className="flex items-center">
             <p className="text-sm text-neutral-400">
-              {format(parseISO(post.date), 'MMMM dd, yyyy')}
+              {format(parseISO(post.date), "MMMM dd, yyyy")}
             </p>
           </div>
         </div>
         <Suspense fallback={null}>
-          <div className="flex flex-col w-full my-6 gap-5 prose-dark max-w-none">
+          <div className="prose-dark my-6 flex w-full max-w-none flex-col gap-5">
             {children}
           </div>
           <div className="text-sm text-neutral-400">
@@ -38,7 +38,7 @@ export const BlogLayout = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              {'Discuss on Twitter'}
+              {"Discuss on Twitter"}
             </a>
             {` • `}
             <a
@@ -46,12 +46,11 @@ export const BlogLayout = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              {'Suggest Change'}
+              {"Suggest Change"}
             </a>
           </div>
         </Suspense>
       </article>
     </BlogContainer>
   );
-}
-
+};

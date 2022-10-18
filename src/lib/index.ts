@@ -4,4 +4,3 @@ export * from "./sanity";
 export * from "./queries";
 export * from "./types";
 export * from "./mdx";
-

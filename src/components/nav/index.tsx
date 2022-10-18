@@ -7,7 +7,7 @@ export const Nav = () => {
   const dimensions = useWindowDimensions();
 
   return (
-    <nav className="flex justify-between w-full">
+    <nav className="flex w-full justify-between">
       <Link href="/">
         <h1 className="text-xl font-medium">vedant nandwana</h1>
       </Link>
@@ -15,7 +15,7 @@ export const Nav = () => {
       {dimensions.width < 768 ? (
         <MobileMenu />
       ) : (
-        <div className="flex gap-4 group">
+        <div className="group flex gap-4">
           <NavItem href="/blogs">blogs</NavItem>
           <NavItem href="#projects">projects</NavItem>
           <NavItem href="#about">about</NavItem>

@@ -18,7 +18,7 @@ body {
 }
 
 .background-grid {
-  @apply h-screen w-screen fixed top-0 left-0;
+  @apply fixed top-0 left-0 h-screen w-screen;
   @apply pointer-events-none z-[-1];
 
   background: url("/grid.png");
@@ -33,7 +33,10 @@ body {
   @apply mx-4 transition-all duration-300;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   @apply font-semibold;
 }
 
@@ -58,11 +61,10 @@ p {
 }
 
 pre {
-  @apply bg-neutral-800 text-neutral-100 rounded-2xl p-6;
+  @apply rounded-2xl bg-neutral-800 p-6 text-neutral-100;
   font-family: "JetBrains Mono", monospace;
 }
 
 img {
   @apply rounded-2xl;
 }
-

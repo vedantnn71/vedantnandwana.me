@@ -7,7 +7,7 @@ type ProjectProps = {
 
 const Project = ({ name, link }: ProjectProps) => (
   <a target="_blank" rel="noreferrer" href={link}>
-    <div className="w-full px-6 py-4 flex justify-between items-center bg-neutral-700/70 backdrop-blur-sm rounded-3xl md:py-6">
+    <div className="flex w-full items-center justify-between rounded-3xl bg-neutral-700/70 px-6 py-4 backdrop-blur-sm md:py-6">
       <h3>{name}</h3>
       <LinkIcon className="w-6 text-neutral-400" />
     </div>
@@ -16,7 +16,7 @@ const Project = ({ name, link }: ProjectProps) => (
 
 export const Projects = () => (
   <div
-    className="flex flex-col w-full h-full text-neutral-400 font-semibold text-xl md:text-3xl gap-6 mt-10"
+    className="mt-10 flex h-full w-full flex-col gap-6 text-xl font-semibold text-neutral-400 md:text-3xl"
     id="projects"
   >
     <h1 className="text-lg md:text-2xl">projects</h1>

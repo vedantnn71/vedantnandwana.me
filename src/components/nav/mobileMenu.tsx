@@ -35,21 +35,21 @@ export const MobileMenu = () => {
           leaveFrom="translate-x-0"
           leaveTo="translate-x-full"
         >
-          <div className="w-screen h-screen absolute z-50 left-0 top-0">
-            <div className="bg-neutral-900 w-fit h-full p-6 flex flex-col gap-10 absolute right-0">
+          <div className="absolute left-0 top-0 z-50 h-screen w-screen">
+            <div className="absolute right-0 flex h-full w-fit flex-col gap-10 bg-neutral-900 p-6">
               <button
-                className="visible md:hidden px-2 mb-4"
+                className="visible mb-4 px-2 md:hidden"
                 onClick={() => setIsOpen(false)}
               >
                 <CrossIcon />
               </button>
 
               <div className="flex flex-col gap-4">
-                <h1 className="font-semibold text-lg text-neutral-400 px-2">
+                <h1 className="px-2 text-lg font-semibold text-neutral-400">
                   vedant nandwana
                 </h1>
 
-                <div className="flex flex-col gap-4 group">
+                <div className="group flex flex-col gap-4">
                   <NavItem href="/">home</NavItem>
                   <NavItem href="/blogs">blogs</NavItem>
                   <NavItem href="/projects">projects</NavItem>
@@ -59,11 +59,11 @@ export const MobileMenu = () => {
               </div>
 
               <div className="flex flex-col gap-4">
-                <h1 className="font-semibold text-lg text-neutral-400 px-2">
+                <h1 className="px-2 text-lg font-semibold text-neutral-400">
                   socials
                 </h1>
 
-                <div className="flex flex-col gap-4 group">
+                <div className="group flex flex-col gap-4">
                   <NavItem href="https://twitter.com/vedantnn7">
                     twitter
                   </NavItem>

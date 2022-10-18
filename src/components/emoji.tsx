@@ -7,11 +7,6 @@ type EmojiProps = {
 
 export const Emoji = ({ name, size }: EmojiProps) => {
   return (
-    <Image
-      src={`/emojis/${name}.png`}
-      alt={name}
-      width={size}
-      height={size}
-    />
+    <Image src={`/emojis/${name}.png`} alt={name} width={size} height={size} />
   );
-}
+};

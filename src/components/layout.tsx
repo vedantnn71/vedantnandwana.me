@@ -3,14 +3,12 @@ import { Container, Nav } from "@/components";
 
 type LayoutProps = {
   children: ReactNode;
-}
+};
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div 
-        className="w-screen h-screen overflow-x-hidden"
-      >
+      <div className="h-screen w-screen overflow-x-hidden">
         <Container>
           <Nav />
           {children}
@@ -19,6 +17,5 @@ export const Layout = ({ children }: LayoutProps) => {
 
       <div className="background-grid"></div>
     </>
-  )
-}
-
+  );
+};

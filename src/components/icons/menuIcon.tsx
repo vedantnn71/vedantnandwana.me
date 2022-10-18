@@ -16,4 +16,3 @@ export const MenuIcon = (props: JSX.IntrinsicElements["svg"]) => (
     <line x1="21" x2="3" y1="6" y2="6"></line>
   </svg>
 );
-

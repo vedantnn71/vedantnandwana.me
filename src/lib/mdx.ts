@@ -1,10 +1,10 @@
-import { serialize } from 'next-mdx-remote/serialize';
-import readingTime from 'reading-time';
-import remarkGfm from 'remark-gfm';
-import rehypeSlug from 'rehype-slug';
-import rehypeCodeTitles from 'rehype-code-titles';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import rehypePrism from 'rehype-prism-plus';
+import { serialize } from "next-mdx-remote/serialize";
+import readingTime from "reading-time";
+import remarkGfm from "remark-gfm";
+import rehypeSlug from "rehype-slug";
+import rehypeCodeTitles from "rehype-code-titles";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypePrism from "rehype-prism-plus";
 
 export async function mdxToHtml(source: string) {
   const mdxSource = await serialize(source, {
@@ -18,19 +18,18 @@ export async function mdxToHtml(source: string) {
           rehypeAutolinkHeadings,
           {
             properties: {
-              className: ['anchor']
-            }
-          }
-        ]
+              className: ["anchor"],
+            },
+          },
+        ],
       ],
-      format: 'mdx'
-    }
+      format: "mdx",
+    },
   });
 
   return {
     html: mdxSource,
     wordCount: source.split(/\s+/gu).length,
-    readingTime: readingTime(source).text
+    readingTime: readingTime(source).text,
   };
 }
-

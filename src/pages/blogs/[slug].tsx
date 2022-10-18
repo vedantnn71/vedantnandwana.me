@@ -1,9 +1,9 @@
-import { MDXRemote } from 'next-mdx-remote';
-import { BlogLayout } from '@/components';
-import { MDXComponents as components } from '@/components';
-import { Post, mdxToHtml } from '@/lib';
-import { postQuery, postSlugsQuery } from '@/lib/queries';
-import { sanityClient, getClient } from '@/lib/sanity-server';
+import { MDXRemote } from "next-mdx-remote";
+import { BlogLayout } from "@/components";
+import { MDXComponents as components } from "@/components";
+import { Post, mdxToHtml } from "@/lib";
+import { postQuery, postSlugsQuery } from "@/lib/queries";
+import { sanityClient, getClient } from "@/lib/sanity-server";
 
 export default function PostPage({ post }: { post: Post }) {
   return (
@@ -24,16 +24,19 @@ export async function getStaticPaths() {
   const paths = await sanityClient.fetch(postSlugsQuery);
   return {
     paths: paths.map((slug: string) => ({ params: { slug } })),
-    fallback: 'blocking'
+    fallback: "blocking",
   };
 }
 
-export async function getStaticProps({ params, preview = false }: {
+export async function getStaticProps({
+  params,
+  preview = false,
+}: {
   params: any;
   preview: boolean;
 }) {
   const { post } = await getClient(preview).fetch(postQuery, {
-    slug: params.slug
+    slug: params.slug,
   });
 
   if (!post) {
@@ -47,9 +50,8 @@ export async function getStaticProps({ params, preview = false }: {
       post: {
         ...post,
         content: html,
-        readingTime
-      }
-    }
+        readingTime,
+      },
+    },
   };
 }
-
