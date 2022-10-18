@@ -6,7 +6,7 @@ import cx from "classnames";
 
 function BlogCard({ post }: { post: Post }) {
   return (
-    <Link href={`/blogs/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`}>
       <div
         className={cx(
           "-mx-4 flex cursor-pointer flex-col gap-3 rounded-xl p-4",
@@ -53,3 +53,4 @@ export async function getStaticProps({ preview = false }) {
 
   return { props: { posts } };
 }
+
