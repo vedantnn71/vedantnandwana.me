@@ -6,7 +6,7 @@ type ContainerProps = {
 
 export function Container({ children }: ContainerProps) {
   return (
-    <div className="mx-12 my-8 flex flex-col items-center gap-12">
+    <div className="m-8 flex flex-col items-center gap-12 md:mx-12">
       {children}
     </div>
   );
