@@ -9,7 +9,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <div 
-        className="w-screen h-screen bg-center bg-no-repeat bg-cover z-[1] overflow-x-hidden"
+        className="w-screen h-screen overflow-x-hidden"
       >
         <Container>
           <Nav />

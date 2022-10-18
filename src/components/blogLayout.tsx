@@ -1,6 +1,5 @@
-import Image from 'next/future/image';
 import { PropsWithChildren, Suspense } from 'react';
-import { Nav, BlogContainer } from '@/components';
+import { BlogContainer } from '@/components';
 import { Post, urlForImage } from '@/lib';
 import { parseISO, format } from 'date-fns';
 
@@ -16,7 +15,7 @@ export const BlogLayout = ({
       date={new Date(post.date).toISOString()}
       type="article"
     >
-      <article className="flex flex-col items-start justify-around w-full mx-4 mb-16">
+      <article className="flex flex-col items-start w-full mb-16">
         <h1 className="mb-2 text-3xl font-bold tracking-tight md:text-2xl">
           {post.title}
         </h1>
