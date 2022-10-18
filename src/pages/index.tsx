@@ -1,4 +1,4 @@
-import { Layout, Hero, About, Projects, Contact } from "@/components";
+import { Layout, Hero, About, Projects, Contact, Footer } from "@/components";
 
 export default function Index() {
   return (
@@ -7,6 +7,7 @@ export default function Index() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </Layout>
   );
 }
