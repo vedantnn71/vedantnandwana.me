@@ -34,7 +34,7 @@ export function MobileMenu() {
           leaveTo="-translate-x-full"
         >
           <div className="absolute right-0 top-0 z-50 h-screen w-screen overflow-scroll no-scrollbar">
-            <div className="flex h-fit w-fit flex-col gap-10 bg-neutral-900 p-6">
+            <div className="flex h-screen w-fit flex-col gap-10 bg-neutral-900 p-6">
               <button
                 className="visible mb-4 px-2 md:hidden"
                 onClick={() => setIsOpen(false)}
