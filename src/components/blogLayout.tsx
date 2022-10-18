@@ -27,7 +27,7 @@ export const BlogLayout = ({
           </div>
         </div>
         <Suspense fallback={null}>
-          <div className="w-full my-6 prose dark:prose-dark max-w-none">
+          <div className="flex flex-col w-full my-6 gap-5 prose-dark max-w-none">
             {children}
           </div>
           <div className="text-sm text-neutral-400">
