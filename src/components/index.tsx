@@ -14,4 +14,6 @@ export * from "./mdxComponents";
 export * from "./blogLayout";
 export * from "./loading";
 export * from "./progress";
+export * from "./footer";
+export * from "./nowPlaying";
 
