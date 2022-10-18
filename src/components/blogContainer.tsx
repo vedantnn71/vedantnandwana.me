@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Container, Nav } from "@/components";
+import { Layout } from "@/components";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
@@ -53,10 +53,11 @@ export function BlogContainer(props: BlogContainerProps) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <Container className="gap-8">
-        <Nav />
-        {children}
-      </Container>
+      <Layout>
+        <div className="flex flex-col gap-4 w-full">
+          {children}
+        </div>
+      </Layout>
     </>
   );
 }
