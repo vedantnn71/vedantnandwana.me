@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
+    "@radix-ui/react-progress": "^1.0.1",
     "@sanity/image-url": "^1.0.1",
     "@sanity/webhook": "^2.0.0",
     "autoprefixer": "^10.4.12",
