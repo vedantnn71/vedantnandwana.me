@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState, Fragment, ReactNode } from "react";
 import { NavItem } from "./item";
 import { Transition } from "@headlessui/react";
 import { MenuIcon, CrossIcon } from "@/components/icons";
@@ -7,8 +7,8 @@ export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <button className="visible md:hidden" onClick={() => setIsOpen(true)}>
+    <div className="overflow-hidden">
+      <button className="visible md:hidden focus:ring-1" onClick={() => setIsOpen(true)}>
         <MenuIcon className="w-6" />
       </button>
 
@@ -22,19 +22,19 @@ export function MobileMenu() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-neutral-900 bg-opacity-75 transition-opacity" />
+      <div className="fixed inset-0 bg-neutral-900 bg-opacity-75 transition-opacity" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
-          enter="transform transition ease-in-out duration-500 sm:duration-700"
-          enterFrom="translate-x-full"
+          enter="ease-in-out duration-500"
+          enterFrom="-translate-x-full"
           enterTo="translate-x-0"
-          leave="transform transition ease-in-out duration-500 sm:duration-700"
+          leave="ease-in-out duration-500"
           leaveFrom="translate-x-0"
-          leaveTo="translate-x-full"
+          leaveTo="-translate-x-full"
         >
-          <div className="absolute left-0 top-0 z-50 h-screen w-screen">
-            <div className="absolute right-0 flex h-full w-fit flex-col gap-10 bg-neutral-900 p-6">
+          <div className="absolute right-0 top-0 z-50 h-screen w-screen overflow-scroll no-scrollbar">
+            <div className="flex h-fit w-fit flex-col gap-10 bg-neutral-900 p-6">
               <button
                 className="visible mb-4 px-2 md:hidden"
                 onClick={() => setIsOpen(false)}
@@ -47,12 +47,12 @@ export function MobileMenu() {
                   vedant nandwana
                 </h1>
 
-                <div className="group flex flex-col gap-4">
+                <div className="group flex flex-col gap-4" onClick={() => setIsOpen(false)}>
                   <NavItem href="/">home</NavItem>
                   <NavItem href="/blogs">blogs</NavItem>
-                  <NavItem href="/projects">projects</NavItem>
-                  <NavItem href="/about">about</NavItem>
-                  <NavItem href="/contact">contact</NavItem>
+                  <NavItem href="/#projects">projects</NavItem>
+                  <NavItem href="/#about">about</NavItem>
+                  <NavItem href="/#contact">contact</NavItem>
                 </div>
               </div>
 
@@ -75,6 +75,6 @@ export function MobileMenu() {
           </div>
         </Transition.Child>
       </Transition.Root>
-    </>
+    </div>
   );
 };
