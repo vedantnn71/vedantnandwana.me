@@ -19,7 +19,7 @@ function Project({ name, link }: ProjectProps) {
 export function Projects() {
   return (
     <div
-      className="mt-10 flex h-full w-full flex-col gap-6 text-xl font-semibold text-neutral-400 md:text-3xl"
+      className="mt-10 flex h-full w-full flex-col gap-6 text-xl font-semibold text-neutral-300 md:text-3xl"
       id="projects"
     >
       <h1 className="text-lg md:text-2xl">projects</h1>
