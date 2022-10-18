@@ -12,3 +12,6 @@ export * from "./consCard";
 export * from "./prosCard";
 export * from "./mdxComponents";
 export * from "./blogLayout";
+export * from "./loading";
+export * from "./progress";
+
