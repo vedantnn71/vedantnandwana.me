@@ -27,7 +27,7 @@ export function BlogLayout({
           </div>
         </div>
         <Suspense fallback={null}>
-          <div className="prose-dark my-6 flex w-full max-w-none flex-col gap-5">
+          <div className="prose-dark my-6 flex w-full max-w-none flex-col gap-5 text-neutral-300">
             {children}
           </div>
           <div className="text-sm text-neutral-400">
@@ -40,7 +40,7 @@ export function BlogLayout({
             >
               {"Discuss on Twitter"}
             </a>
-            {` • `}
+            {" • "}
             <a
               href="https://github.com/vedantnn7/vedantnandwana.me/issues"
               target="_blank"
