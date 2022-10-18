@@ -31,6 +31,7 @@ specifiers:
   remark-gfm: ^3.0.1
   sanity: dev-preview
   sanity-plugin-markdown: ^3.0.0-v3-studio.0
+  sass: ^1.55.0
   tailwindcss: ^3.1.8
   typescript: 4.8.4
 
@@ -41,7 +42,7 @@ dependencies:
   autoprefixer: 10.4.12_postcss@8.4.18
   classnames: 2.3.2
   date-fns: 2.29.3
-  next: 12.3.1_6tziyx3dehkoeijunclpkpolha
+  next: 12.3.1_ru2bdujs5wv7zrmz55pdteej2m
   next-mdx-remote: 4.1.0_biqbaboplfbrettd7655fr4n2y
   next-sanity: 1.0.0_hbpmbyr3lhrg3gpxx3vpiyxkm4
   postcss: 8.4.18
@@ -53,8 +54,9 @@ dependencies:
   rehype-prism-plus: 1.5.0
   rehype-slug: 5.0.1
   remark-gfm: 3.0.1
-  sanity: 3.0.0-dev-preview.20_mzmnk5qj3zyu5wzo47kxtxvq4u
+  sanity: 3.0.0-dev-preview.20_2r5fmppivd3c7iqnzkgkqkms6i
   sanity-plugin-markdown: 3.0.0-v3-studio.3_zy2ghqmjvzvjsiqt5xw2dvihri
+  sass: 1.55.0
   tailwindcss: 3.1.8_neo3lunb2qpadwxplzw7r2isgm
 
 devDependencies:
@@ -1165,7 +1167,7 @@ packages:
       - supports-color
     dev: false
 
-  /@sanity/server/3.0.0-dev-preview.20:
+  /@sanity/server/3.0.0-dev-preview.20_sass@1.55.0:
     resolution: {integrity: sha512-IAuGkYsCYFuYTuFcDWx+I3mGoEBbPBe+nU1uY7QOCJyHvpP5a4Fy8LtyT/Xp60/uYFUJEhKjo8yKG+/8WnV5Xg==}
     engines: {node: '>=14.0.0'}
     dependencies:
@@ -1181,7 +1183,7 @@ packages:
       module-alias: 2.2.2
       read-pkg-up: 7.0.1
       resolve-from: 5.0.0
-      vite: 3.1.8
+      vite: 3.1.8_sass@1.55.0
     transitivePeerDependencies:
       - less
       - sass
@@ -1595,7 +1597,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.19.3
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.1.8
+      vite: 3.1.8_sass@1.55.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -4224,6 +4226,10 @@ packages:
     resolution: {integrity: sha512-2eB/sswms9AEUSkOm4SbV5Y7Vmt/bKRwByd52jfLkW4OLYeaTP3EEiJ9agqU0O/tq6Dk62Zfj+TJSqfm1rLVGQ==}
     dev: false
 
+  /immutable/4.1.0:
+    resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==}
+    dev: false
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -5515,15 +5521,15 @@ packages:
       '@sanity/client': 3.4.1
       '@sanity/groq-store': 0.4.1
       groq: 2.33.2
-      next: 12.3.1_6tziyx3dehkoeijunclpkpolha
+      next: 12.3.1_ru2bdujs5wv7zrmz55pdteej2m
       react: 18.2.0
-      sanity: 3.0.0-dev-preview.20_mzmnk5qj3zyu5wzo47kxtxvq4u
+      sanity: 3.0.0-dev-preview.20_2r5fmppivd3c7iqnzkgkqkms6i
       styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /next/12.3.1_6tziyx3dehkoeijunclpkpolha:
+  /next/12.3.1_ru2bdujs5wv7zrmz55pdteej2m:
     resolution: {integrity: sha512-l7bvmSeIwX5lp07WtIiP9u2ytZMv7jIeB8iacR28PuUEFG5j0HGAPnMqyG5kbZNBG2H7tRsrQ4HCjuMOPnANZw==}
     engines: {node: '>=12.22.0'}
     hasBin: true
@@ -5547,6 +5553,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      sass: 1.55.0
       styled-jsx: 5.0.7_b6k74wvxdvqypha4emuv7fd2ke
       use-sync-external-store: 1.2.0_react@18.2.0
     optionalDependencies:
@@ -6733,7 +6740,7 @@ packages:
       '@uiw/react-md-editor': 3.19.0_rj7ozvcq3uehdlnj3cbwzbi5ce
       react: 18.2.0
       rehype-sanitize: 5.0.1
-      sanity: 3.0.0-dev-preview.20_mzmnk5qj3zyu5wzo47kxtxvq4u
+      sanity: 3.0.0-dev-preview.20_2r5fmppivd3c7iqnzkgkqkms6i
       styled-components: 5.3.6_7i5myeigehqah43i5u7wbekgba
     transitivePeerDependencies:
       - '@types/react'
@@ -6741,7 +6748,7 @@ packages:
       - supports-color
     dev: false
 
-  /sanity/3.0.0-dev-preview.20_mzmnk5qj3zyu5wzo47kxtxvq4u:
+  /sanity/3.0.0-dev-preview.20_2r5fmppivd3c7iqnzkgkqkms6i:
     resolution: {integrity: sha512-wcVer7UbXfE9C0nJqppX22CMcNdoyZeoUDQ29JarHz6y2cvpiOCe+JNPchtGpQRkAgbCgkeNce/d7QgxGActPA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -6772,7 +6779,7 @@ packages:
       '@sanity/mutator': 3.0.0-dev-preview.20
       '@sanity/portable-text-editor': 3.0.0-dev-preview.20_zd6skqab2rm35qma53bmg7gtte
       '@sanity/schema': 3.0.0-dev-preview.20
-      '@sanity/server': 3.0.0-dev-preview.20
+      '@sanity/server': 3.0.0-dev-preview.20_sass@1.55.0
       '@sanity/types': 3.0.0-dev-preview.20
       '@sanity/ui': 0.38.2_2zpt4ilzykmne4yndyzrqd4gdm
       '@sanity/util': 3.0.0-dev-preview.20
@@ -6859,6 +6866,16 @@ packages:
       - supports-color
       - terser
       - utf-8-validate
+    dev: false
+
+  /sass/1.55.0:
+    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.1.0
+      source-map-js: 1.0.2
     dev: false
 
   /saxes/6.0.0:
@@ -7713,7 +7730,7 @@ packages:
       vfile-message: 3.1.2
     dev: false
 
-  /vite/3.1.8:
+  /vite/3.1.8_sass@1.55.0:
     resolution: {integrity: sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -7736,6 +7753,7 @@ packages:
       postcss: 8.4.18
       resolve: 1.22.1
       rollup: 2.78.1
+      sass: 1.55.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
