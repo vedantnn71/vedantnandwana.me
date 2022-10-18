@@ -36,8 +36,6 @@ export async function getStaticProps({ params, preview = false }: {
     slug: params.slug
   });
 
-  console.log({post})
-
   if (!post) {
     return { notFound: true };
   }
