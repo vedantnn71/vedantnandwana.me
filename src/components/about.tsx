@@ -8,7 +8,7 @@ export function About() {
       id="about"
     >
       <h1 className="text-lg md:text-2xl">about me</h1>
-      <p className="">
+      <p>
         heyy <Emoji name="wave" size={24} /> I’m <Highlight>vedant</Highlight>.
         A young dev who <Highlight>loveeeees</Highlight> tinkering and playing
         with software.

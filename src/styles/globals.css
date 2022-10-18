@@ -56,10 +56,6 @@ h4 {
   @apply text-base md:text-lg;
 }
 
-p {
-  @apply text-base;
-}
-
 pre {
   @apply rounded-2xl bg-neutral-800 p-6 text-neutral-100;
   font-family: "JetBrains Mono", monospace;
