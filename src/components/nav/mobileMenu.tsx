@@ -1,11 +1,9 @@
-import Link from "next/link";
-import cx from "classnames";
-import { useState, useEffect, Fragment } from "react";
+import { useState, Fragment } from "react";
 import { NavItem } from "./item";
 import { Transition } from "@headlessui/react";
 import { MenuIcon, CrossIcon } from "@/components/icons";
 
-export const MobileMenu = () => {
+export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

@@ -4,7 +4,7 @@ type ContainerProps = {
   children: ReactNode;
 };
 
-export const Container = ({ children }: ContainerProps) => {
+export function Container({ children }: ContainerProps) {
   return (
     <div className="mx-12 my-8 flex flex-col items-center gap-12">
       {children}

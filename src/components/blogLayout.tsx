@@ -3,10 +3,10 @@ import { BlogContainer } from "@/components";
 import { Post, urlForImage } from "@/lib";
 import { parseISO, format } from "date-fns";
 
-export const BlogLayout = ({
+export function BlogLayout({
   children,
   post,
-}: PropsWithChildren<{ post: Post }>) => {
+}: PropsWithChildren<{ post: Post }>) {
   return (
     <BlogContainer
       title={`${post.title} – Vedant Nandwana`}

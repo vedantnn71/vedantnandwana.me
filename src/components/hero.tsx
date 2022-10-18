@@ -1,7 +1,7 @@
 import { Emoji } from "@/components";
 import Link from "next/link";
 
-export const Hero = () => {
+export function Hero() {
   return (
     <div className="my-16 flex flex-col items-center justify-center">
       <h1 className="text-center text-5xl font-semibold text-neutral-400 md:text-8xl">

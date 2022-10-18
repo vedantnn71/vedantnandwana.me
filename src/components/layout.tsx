@@ -5,7 +5,7 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-export const Layout = ({ children }: LayoutProps) => {
+export function Layout({ children }: LayoutProps) {
   return (
     <>
       <div className="h-screen w-screen overflow-x-hidden">

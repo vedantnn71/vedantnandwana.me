@@ -8,7 +8,7 @@ type CalloutProps = {
   children: ReactNode;
 };
 
-const CustomLink = (props: JSX.IntrinsicElements["a"]) => {
+function CustomLink(props: JSX.IntrinsicElements["a"]) {
   const href = props.href;
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
 

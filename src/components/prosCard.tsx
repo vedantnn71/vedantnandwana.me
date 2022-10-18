@@ -3,7 +3,7 @@ type ProsCardProps = {
   pros: string[];
 };
 
-export const ProsCard = ({ title, pros }: ProsCardProps) => {
+export function ProsCard({ title, pros }: ProsCardProps) {
   return (
     <div className="my-4 w-full rounded-xl border border-green-200 bg-green-50 p-6 dark:border-green-900 dark:bg-green-900">
       <span>{`You might use ${title} if...`}</span>
@@ -30,4 +30,4 @@ export const ProsCard = ({ title, pros }: ProsCardProps) => {
       </div>
     </div>
   );
-};
+}

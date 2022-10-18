@@ -3,7 +3,7 @@ import { MobileMenu } from "./mobileMenu";
 import { NavItem } from "./item";
 import Link from "next/link";
 
-export const Nav = () => {
+export function Nav() {
   const dimensions = useWindowDimensions();
 
   return (

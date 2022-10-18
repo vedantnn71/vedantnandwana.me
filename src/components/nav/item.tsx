@@ -9,7 +9,7 @@ type NavItemProps = {
   className?: string;
 };
 
-export const NavItem = ({ href, children, className }: NavItemProps) => {
+export function NavItem({ href, children, className }: NavItemProps) {
   const router = useRouter();
   const isActive = router.pathname === href;
 
