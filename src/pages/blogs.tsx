@@ -2,6 +2,7 @@ import { Layout } from "@/components";
 import { Post, getClient, indexQuery } from "@/lib";
 import { parseISO, format } from "date-fns";
 import Link from "next/link";
+import Head from "next/head";
 import cx from "classnames";
 
 function BlogCard({ post }: { post: Post }) {
@@ -29,6 +30,9 @@ function BlogCard({ post }: { post: Post }) {
 export default function Blogs({ posts }: { posts: Post[] }) {
   return (
     <Layout>
+      <Head>
+        <title>Vedant Nandwana - Blogs</title>
+      </Head>
       <div className="flex w-full flex-col gap-4">
         <div>
           <h1 className="text-xl font-semibold text-neutral-300">My Blogs</h1>

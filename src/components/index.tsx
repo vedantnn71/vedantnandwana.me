@@ -16,4 +16,5 @@ export * from "./loading";
 export * from "./progress";
 export * from "./footer";
 export * from "./nowPlaying";
+export * from "./seo";
 
