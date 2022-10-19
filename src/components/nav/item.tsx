@@ -14,7 +14,7 @@ export function NavItem({ href, children, className }: NavItemProps) {
   const isActive = router.pathname === href;
 
   return (
-    <Link href={href}>
+    <Link href={href} prefetch={false}>
       <a
         className={cx(
           "px-3 text-base text-neutral-300 md:py-0 md:text-inherit md:hover:text-white",
