@@ -7,7 +7,7 @@ export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="overflow-hidden">
+    <div className="grid place-items-center overflow-hidden">
       <button className="visible md:hidden focus:ring-1" onClick={() => setIsOpen(true)}>
         <MenuIcon className="w-6" />
       </button>
