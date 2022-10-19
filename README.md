@@ -1,3 +1,5 @@
+![cover](https://raw.githubusercontent.com/vedantnn71/vedantnandwana.me/main/public/social.png)
+
 This is my personal website / portfolio. Feel free to contribute to the project or raise any sort of issue if you have any problem.
 
 **Used Tech Stack**
