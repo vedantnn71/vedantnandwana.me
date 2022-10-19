@@ -11,4 +11,3 @@ This is my personal website / portfolio. Feel free to contribute to the project 
 - Vercel for deployment
 - SWR for data fetching
 
-P.S: I've temporarily hosted it over a random vercel deploy url, I'll move it my personal domain soon.
