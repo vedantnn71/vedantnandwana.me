@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -41,9 +44,11 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@next/bundle-analyzer": "^12.3.1",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "cross-env": "^7.0.3",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "husky": "^8.0.1",
