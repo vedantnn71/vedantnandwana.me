@@ -7,9 +7,9 @@ export function Nav() {
   const dimensions = useWindowDimensions();
 
   return (
-    <nav className="flex w-full justify-between">
+    <nav className="flex w-full justify-between items-center">
       <Link href="/">
-        <h1 className="text-xl font-medium">vedant nandwana</h1>
+        <h1 className="text-lg font-medium md:text-xl">vedant nandwana</h1>
       </Link>
 
       {dimensions.width < 768 ? (

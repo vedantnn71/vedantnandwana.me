@@ -5,6 +5,9 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_ENV: 'PRODUCTION',
   },
+  experimental: {
+    nextScriptWorkers: true,
+  }
 }
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
