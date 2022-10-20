@@ -19,7 +19,7 @@ export function NavItem({ href, children, className }: NavItemProps) {
         className={cx(
           "px-3 text-base text-neutral-300 md:py-0 md:text-inherit md:hover:text-white",
           isActive &&
-            "rounded-xl bg-neutral-800 to-yellow-100 font-medium py-2 md:py-0 md:bg-none",
+            "rounded-xl bg-neutral-800 to-yellow-100 py-2 font-medium md:bg-none md:py-0",
           className
         )}
       >
@@ -27,4 +27,4 @@ export function NavItem({ href, children, className }: NavItemProps) {
       </a>
     </Link>
   );
-};
+}

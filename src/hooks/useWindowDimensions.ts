@@ -30,4 +30,4 @@ export function useWindowDimensions(): {
     width: windowDimensions?.width as number,
     height: windowDimensions?.height as number,
   };
-};
+}

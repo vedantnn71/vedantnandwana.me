@@ -8,7 +8,10 @@ export function MobileMenu() {
 
   return (
     <div className="grid place-items-center overflow-hidden">
-      <button className="visible md:hidden focus:ring-1" onClick={() => setIsOpen(true)}>
+      <button
+        className="visible focus:ring-1 md:hidden"
+        onClick={() => setIsOpen(true)}
+      >
         <MenuIcon className="w-6" />
       </button>
 
@@ -22,7 +25,7 @@ export function MobileMenu() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-      <div className="fixed inset-0 bg-neutral-900 bg-opacity-75 transition-opacity" />
+          <div className="fixed inset-0 bg-neutral-900 bg-opacity-75 transition-opacity" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -33,7 +36,7 @@ export function MobileMenu() {
           leaveFrom="translate-x-0"
           leaveTo="-translate-x-full"
         >
-          <div className="absolute right-0 top-0 z-50 h-screen w-screen overflow-scroll no-scrollbar">
+          <div className="no-scrollbar absolute right-0 top-0 z-50 h-screen w-screen overflow-scroll">
             <div className="flex h-screen w-fit flex-col gap-10 bg-neutral-900 p-6">
               <button
                 className="visible mb-4 px-2 md:hidden"
@@ -47,7 +50,10 @@ export function MobileMenu() {
                   vedant nandwana
                 </h1>
 
-                <div className="group flex flex-col gap-4" onClick={() => setIsOpen(false)}>
+                <div
+                  className="group flex flex-col gap-4"
+                  onClick={() => setIsOpen(false)}
+                >
                   <NavItem href="/">home</NavItem>
                   <NavItem href="/blogs">blogs</NavItem>
                   <NavItem href="/#projects">projects</NavItem>
@@ -77,4 +83,4 @@ export function MobileMenu() {
       </Transition.Root>
     </div>
   );
-};
+}

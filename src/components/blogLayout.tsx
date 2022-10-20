@@ -53,4 +53,4 @@ export function BlogLayout({
       </article>
     </BlogContainer>
   );
-};
+}

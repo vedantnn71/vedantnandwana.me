@@ -5,4 +5,3 @@ export async function fetcher<JSON = any>(
   const res = await fetch(input, init);
   return res.json();
 }
-

@@ -7,7 +7,7 @@ export function Nav() {
   const dimensions = useWindowDimensions();
 
   return (
-    <nav className="flex w-full justify-between items-center">
+    <nav className="flex w-full items-center justify-between">
       <Link href="/">
         <h1 className="text-lg font-medium md:text-xl">vedant nandwana</h1>
       </Link>
@@ -15,7 +15,7 @@ export function Nav() {
       {dimensions.width < 768 ? (
         <MobileMenu />
       ) : (
-        <div className="md:hover:text-neutral-500 flex max-w-fit">
+        <div className="flex max-w-fit md:hover:text-neutral-500">
           <NavItem href="/blogs">blogs</NavItem>
           <NavItem href="#projects">projects</NavItem>
           <NavItem href="#about">about</NavItem>
@@ -24,4 +24,4 @@ export function Nav() {
       )}
     </nav>
   );
-};
+}

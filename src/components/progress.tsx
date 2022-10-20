@@ -3,7 +3,7 @@ import React from "react";
 
 type ProgressProps = {
   progress: number;
-}
+};
 
 export function Progress({ progress }: ProgressProps) {
   return (
@@ -17,5 +17,4 @@ export function Progress({ progress }: ProgressProps) {
       />
     </ProgressPrimitive.Root>
   );
-};
-
+}

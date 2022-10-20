@@ -5,4 +5,3 @@ export * from "./queries";
 export * from "./types";
 export * from "./mdx";
 export * from "./fetcher";
-

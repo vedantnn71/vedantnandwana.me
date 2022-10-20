@@ -17,7 +17,10 @@ export function Layout({ children }: LayoutProps) {
 
       <div className="background-grid"></div>
 
-      <svg id="texture" className="w-screen h-screen fixed top-0 left-0 -z-50 opacity-20">
+      <svg
+        id="texture"
+        className="fixed top-0 left-0 -z-50 h-screen w-screen opacity-20"
+      >
         <filter id="noise">
           <feTurbulence
             type="fractalNoise"
@@ -31,4 +34,4 @@ export function Layout({ children }: LayoutProps) {
       </svg>
     </>
   );
-};
+}

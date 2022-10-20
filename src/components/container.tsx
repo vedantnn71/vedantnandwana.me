@@ -10,4 +10,4 @@ export function Container({ children }: ContainerProps) {
       {children}
     </div>
   );
-};
+}

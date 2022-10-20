@@ -30,4 +30,4 @@ export function ConsCard({ title, cons }: ConsCardProps) {
       </div>
     </div>
   );
-};
+}

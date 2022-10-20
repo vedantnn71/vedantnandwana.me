@@ -21,7 +21,7 @@ function CustomLink(props: JSX.IntrinsicElements["a"]) {
   }
 
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
-};
+}
 
 function RoundedImage(props: ImageProps) {
   return <Image className="rounded-lg" {...props} />;
