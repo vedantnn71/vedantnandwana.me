@@ -9,7 +9,7 @@ export function Footer() {
       <div className="flex gap-8 text-base text-neutral-400 font-medium md:text-lg md:gap-12">
         <div className="flex flex-col gap-4">
           <Link href="/">home</Link>
-          <Link href="/blog">blog</Link>
+          <Link href="/blogs">blog</Link>
           <Link href="/#projects">projects</Link>
           <Link href="/#contact">contact</Link>
         </div>
