@@ -19,6 +19,8 @@ cd vedantnandwana.me
 pnpm i
 pnpm dev
 ```
+
+## ♥ Contributors
 <a href="https://github.com/vedantnn71/vedantnandwana.me/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=vedantnn71/vedantnandwana.me" />
 </a>
