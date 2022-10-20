@@ -27,8 +27,23 @@ article {
   }
 
   pre {
-    @apply rounded-2xl bg-neutral-800 p-6 text-neutral-100;
+    @apply rounded-2xl bg-neutral-800 p-4 text-neutral-100;
+  }
+
+  code {
+    @apply text-xs md:text-sm;
     font-family: "JetBrains Mono", monospace;
+  }
+
+  .hljs {
+    @apply bg-neutral-800;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   img {
