@@ -23,8 +23,7 @@ export function About() {
       </p>
       <p>
         {" "}
-        currently I’m <Highlight>building dive.</Highlight> an app which can
-        help you make it easy to plan your life.
+        currently I&apos;m diving into the world of <Highlight>open source</Highlight>, and building software for stuff that I find repetative and painful.
       </p>
     </div>
   );
@@ -37,3 +36,4 @@ type HighlightProps = {
 function Highlight({ children }: HighlightProps) {
   return <span className="italic text-neutral-100">{children}</span>;
 }
+
