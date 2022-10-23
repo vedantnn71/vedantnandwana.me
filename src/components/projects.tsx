@@ -24,7 +24,7 @@ export function Projects() {
     >
       <h1 className="text-lg md:text-2xl">top projects</h1>
 
-      <Project name="better hacker news" link="https://better-hackernews.vercel.app/" />
+      <Project name="better hacker news" link="https://hn.vedantnandwana.me/" />
       <Project name="focushype" link="https://focushype.software" />
     </div>
   );
