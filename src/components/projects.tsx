@@ -22,11 +22,10 @@ export function Projects() {
       className="mt-10 flex h-full w-full flex-col gap-6 text-xl font-semibold text-neutral-300 md:text-3xl"
       id="projects"
     >
-      <h1 className="text-lg md:text-2xl">projects</h1>
+      <h1 className="text-lg md:text-2xl">top projects</h1>
 
+      <Project name="better hacker news" link="https://better-hackernews.vercel.app/" />
       <Project name="focushype" link="https://focushype.software" />
-      <Project name="spark (wip)" link="https://github.com/vedantnn71/spark" />
-      <Project name="dive (wip)" link="" />
     </div>
   );
 }
