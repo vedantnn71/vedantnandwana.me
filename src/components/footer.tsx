@@ -37,7 +37,7 @@ export function Footer() {
             github
           </a>
           <a
-            href="https://buymeacoffee.com/vedantnn71"
+            href="https://www.buymeacoffee.com/vedantnandwana"
             target="_blank"
             rel="noopener noreferrer"
           >

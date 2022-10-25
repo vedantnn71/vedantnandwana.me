@@ -52,7 +52,7 @@ export function Contact() {
         link="mailto:hello@vedantnandwana.me"
         iconId="email"
       />
-      <Social name="buy me a coffee" link="" iconId="heart" />
+      <Social name="buy me a coffee" link="https://www.buymeacoffee.com/vedantnandwana" iconId="heart" />
     </div>
   );
 }
