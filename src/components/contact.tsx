@@ -20,7 +20,13 @@ const icons = {
 
 function Social({ name, link, iconId: id }: SocialProps) {
   return (
-    <a target="_blank" rel="noreferrer" href={link}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+      data-event="click"
+      data-event-name={id}
+    >
       <div className="flex w-full items-center gap-4 rounded-3xl bg-neutral-700/70 px-6 py-4 backdrop-blur-sm md:py-6">
         {icons[id]}
         <h3>{name}</h3>
@@ -52,7 +58,11 @@ export function Contact() {
         link="mailto:hello@vedantnandwana.me"
         iconId="email"
       />
-      <Social name="buy me a coffee" link="https://www.buymeacoffee.com/vedantnandwana" iconId="heart" />
+      <Social
+        name="buy me a coffee"
+        link="https://www.buymeacoffee.com/vedantnandwana"
+        iconId="heart"
+      />
     </div>
   );
 }

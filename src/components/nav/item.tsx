@@ -16,6 +16,8 @@ export function NavItem({ href, children, className }: NavItemProps) {
   return (
     <Link href={href} prefetch={false}>
       <a
+        data-event="click"
+        data-event-name={"Visit " + href}
         className={cx(
           "px-3 text-base text-neutral-300 md:py-0 md:text-inherit md:hover:text-white",
           isActive &&

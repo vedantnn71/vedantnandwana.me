@@ -12,7 +12,11 @@ export function Hero() {
       </h1>
 
       <Link href="#about">
-        <button className="button button-md md:button-lg button-primary mt-10">
+        <button
+          data-event="click"
+          data-event-name="Explore"
+          className="button button-md md:button-lg button-primary mt-10"
+        >
           Explore
           <Emoji name="eyes" size={24} />
         </button>

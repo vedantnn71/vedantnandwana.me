@@ -7,7 +7,13 @@ type ProjectProps = {
 
 function Project({ name, link }: ProjectProps) {
   return (
-    <a target="_blank" rel="noreferrer" href={link}>
+    <a
+      data-event="click"
+      data-event-name={name}
+      target="_blank"
+      rel="noreferrer"
+      href={link}
+    >
       <div className="flex w-full items-center justify-between rounded-3xl bg-neutral-700/70 px-6 py-4 backdrop-blur-sm md:py-6">
         <h3>{name}</h3>
         <LinkIcon className="w-6 text-neutral-400" />
