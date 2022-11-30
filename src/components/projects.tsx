@@ -31,7 +31,7 @@ export function Projects() {
       <h1 className="text-lg md:text-2xl">top projects</h1>
 
       <Project name="better hacker news" link="https://hn.vedantnandwana.me/" />
-      <Project name="focushype" link="https://focushype.software" />
+      <Project name="explore more" link="https://github.com/vedantnn71" />
     </div>
   );
 }
