@@ -5,7 +5,7 @@ export function Analytics() {
     <Script
       src="/bud.js"
       data-id="clameuzd80000mb081x2ge2l9"
-      strategy="lazyOnload"
+      strategy="afterInteractive"
     />
   );
 }
