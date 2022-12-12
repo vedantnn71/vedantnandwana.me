@@ -7,6 +7,14 @@ const nextConfig = {
   },
   experimental: {
     nextScriptWorkers: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/bud.js',
+        destination: 'https://usebud.vercel.app/track.js',
+      },
+    ];
   }
 }
 
