@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image, { ImageProps } from "next/future/image";
+import Image, { ImageProps } from "next/image";
 import { ProsCard, ConsCard } from "@/components";
 import { ReactNode } from "react";
 
