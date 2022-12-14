@@ -15,7 +15,7 @@ export function Nav() {
       {dimensions.width < 768 ? (
         <MobileMenu />
       ) : (
-        <div className="flex max-w-fit md:hover:text-neutral-500">
+        <div className="flex max-w-fit md:hover:text-neutral-500 gap-6">
           <NavItem href="/blogs">blogs</NavItem>
           <NavItem href="#projects">projects</NavItem>
           <NavItem href="#about">about</NavItem>

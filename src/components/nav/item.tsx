@@ -19,7 +19,7 @@ export function NavItem({ href, children, className }: NavItemProps) {
       data-event="click"
       data-event-name={"Visit " + href}
       className={cx(
-        "px-3 text-base text-neutral-300 md:py-0 md:text-inherit md:hover:text-white",
+        "text-base text-neutral-300 md:py-0 md:text-inherit md:hover:text-white",
         isActive &&
           "rounded-xl bg-neutral-800 to-yellow-100 py-2 font-medium md:bg-none md:py-0",
         className
