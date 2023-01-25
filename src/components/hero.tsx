@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="my-16 flex flex-col items-center justify-center">
-      <h1 className="text-center text-5xl font-semibold text-neutral-400 md:text-8xl">
+    <div className="flex flex-col items-center justify-center h-screen -mt-20">
+      <h1 className="text-center text-5xl font-semibold text-neutral-400 md:text-7xl lg:text-9xl">
         a dev who just
         <br />
         <span className="italic text-neutral-100">loveeees</span> to tinker with
